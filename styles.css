@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #76A99C;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: purple;
+  color: #fff;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  padding-right: 200px;
+}
+.logo img {
+  width: 100px; /* Adjust according to your desired width */
+  height: auto; /* This will maintain the aspect ratio */
+  margin-left: 20px;
+}
+
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 40px;
+  font-size: 30px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffd700;
+}
+
+.content {
+  padding-top: 60px; /* Adjust according to the height of the navbar */
+  height: 2000px; /* Just for demonstration */
+  font-size: 20px;
+}

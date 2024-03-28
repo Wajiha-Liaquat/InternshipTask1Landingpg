@@ -1,0 +1,162 @@
+<!DOCTYPE html>                                                                                                                                                      <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+      .container{
+            margin-left:500px;
+            padding: 12px 20px;
+            border-radius: 5px;
+        }
+        textarea,select{
+            width:60%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        input[type=text],input[type=email],input[type=tel],input[type=password],select{
+            width:60%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        input[type=text]:focus,input[type=email]:focus,input[type=tel]:focus,input[type=password]:focus{
+            background-color: aquamarine;
+            color:blue;
+        }
+        #reset{
+            background-color:red;
+            color:white;
+        }
+        #submit{
+            background-color:green;
+            color:white;
+        }
+        #reset,#submit{
+            border: 2px solid wheat;
+            width:45%;
+            padding:14px 0px;
+            margin: 12px 0px;
+            border-radius: 50px;
+        }
+        #faiza{
+            background-color: #9CBC2C;
+            /* background-image: url( 'form.jpg' ); */
+            width: 400px;
+            height: 900px;
+            border: 2px solid black;
+        }
+        #address{
+            width:60%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        #country{
+            width:60%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 38px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        #postcode{
+            width:60%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 33px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        #card{
+            width:55%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        #code{
+            width:55%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        #ename{
+            width:55%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        #file{
+            width:55%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 35px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        input[type=radio],select{
+            margin-top: 20px;
+           margin-left: 20px;
+            /* width:60%;
+            box-sizing: border-box;
+            padding: 7px ;
+            margin: 0px 50px;
+            border: 2px solid black;
+            border-radius: 5px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="faiza">
+        <form action="">
+            <h2>Step 1: Your details</h2>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Name</b></label>
+<input type="text" id="name" placeholder="First and last name.."></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Email</b></label>
+<input type="email" id="email" placeholder="example@gmail.com.."></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Phone</b></label>
+<input type="text" id="phone" placeholder="Eg. 03000000000"></div>
+<h2>Step 2: Delivery address</h2>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Address</b></label>
+<textarea type="text" id="address"></textarea></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Post code</b></label>
+<input type="text" id="postcode" placeholder=""></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Country</b></label>
+<input type="text" id="country" placeholder=""></div>
+<h2>Step 3: Card details</h2>
+<div style="border: 2px solid white; padding: 10px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for=""><b>Card type</b></label><br>
+    <input type="radio" id="visa">
+    <label for=""><img src="https://www.visa.com.au/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" height="20px" width="30px">Visa</label>
+    <input type="radio" id="amex">
+    <label for=""><img src="https://c8.alamy.com/comp/2N5MAEP/mykolaiv-ukraine-january-18-2021-logotype-of-amex-payment-system-on-white-background-illustration-2N5MAEP.jpg" height="20px" width="30px">AmEx</label>
+    <input type="radio" id="mastercard">
+    <label for=""><img src="https://cdn.vox-cdn.com/thumbor/FtAV-Waa1rTPheAkxv3o4i0MVf0=/0x0:1000x1000/1200x800/filters:focal(421x430:581x590)/cdn.vox-cdn.com/uploads/chorus_image/image/62800797/Mastercard_logo.0.jpg" height="20px" width="30px">Mastercard</label></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Card number</b></label>
+<input type="text" id="card" placeholder=""></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Security code</b></label>
+<input type="text" id="code" placeholder=""></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Name on card</b></label>
+<input type="text" id="ename" placeholder="Exact name as on the card"></div>
+<div style="border: 2px solid white; padding: 6px; border-radius: 5px; margin-bottom: 5px; background-color: #B9CF6A;"><label for="" style="margin-left: 5px;"><b>Choose file</b></label>
+<input type="file" id="file" placeholder=""></div>
+<button type="reset" id="reset"><b>Reset</b></button>
+<button type="submit" id="submit"><b>Submit</b></button>
+        </form>
+    </div>
+</body>
+</html>
+
